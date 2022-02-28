@@ -1,0 +1,12 @@
+.rowDIV {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.squareDIV {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+}
