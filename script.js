@@ -14,7 +14,10 @@ function btn_clear() {
         grid.removeChild(element);
     });
 
-    const newGrid = prompt("What is the size of the new grid?");
+    let newGrid = prompt("What is the size of the new grid?");
+    while (parseInt(newGrid) > 100) {
+        newGrid = prompt("It must not be bigger than 100")
+    }
     gridSize(parseInt(newGrid))
 }
 
@@ -27,7 +30,8 @@ function gridSize(size) {
             squareDIV.classList.add('squareDIV');
 
             squareDIV.addEventListener("mouseenter", (e) => {
-                e.target.style.backgroundColor = "red";
+                const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+                e.target.style.backgroundColor = randomColor;
             })
             rowDIV.appendChild(squareDIV);
         }
