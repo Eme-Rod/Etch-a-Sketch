@@ -6,6 +6,10 @@ for (let i = 0; i < 16; i++) {
     for (let i = 0; i < 16; i++) {
         const squareDIV = document.createElement('div');
         squareDIV.classList.add('squareDIV');
+
+        squareDIV.addEventListener("mouseenter", (e) => {
+            e.target.style.backgroundColor = "red";
+        })
         rowDIV.appendChild(squareDIV);
     }
     container.appendChild(rowDIV);
