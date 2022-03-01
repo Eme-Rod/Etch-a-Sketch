@@ -1,8 +1,18 @@
+body {
+  display: flex;
+  justify-content: center;
+  padding-top: 5em;
+}
+
 #container {
-  padding: 0;
-  margin: 0;
-  width: 100vw;
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#grid {
+  /* display: flex; */
+  border: 2px solid #acb1b6;
+  padding: 1px;
 }
 
 .rowDIV {
@@ -13,13 +23,21 @@
 }
 
 .squareDIV {
-  flex-basis: 30px;
-  flex-grow: 0;
-  flex-shrink: 0;
-  height: auto;
-  width: auto;
+  padding: 5px;
 }
 
-.squareDIV:hover {
-  background-color: red;
+#btn-grid {
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  width: 90px;
+  padding: 5px;
+  border-radius: 15px;
+  color: #ffffff;
+  background-color: #4eb5f1;
+}
+
+#btn-grid:hover {
+  background-color: #4095c6;
 }
