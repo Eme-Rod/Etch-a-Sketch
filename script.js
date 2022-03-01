@@ -4,7 +4,7 @@ const grid = document.createElement('div');
 
 grid.setAttribute('id', 'grid');
 buttonGrid.setAttribute('id', 'btn-grid');
-buttonGrid.textContent = 'Clear';
+buttonGrid.textContent = 'New Grid Size';
 container.appendChild(buttonGrid);
 container.appendChild(grid);
 
